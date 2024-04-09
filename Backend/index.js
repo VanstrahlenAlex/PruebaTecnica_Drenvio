@@ -14,6 +14,7 @@ conectarDB();
 dotenv.config();
 
 //Routing
+//Init app
 app.use('/api/', (req, res, next) => {
     console.log("API...");
     next();
