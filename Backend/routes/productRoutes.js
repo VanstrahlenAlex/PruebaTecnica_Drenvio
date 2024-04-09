@@ -1,5 +1,5 @@
 import express from "express";
-import { getProducts, getProductsInStock, createClient } from "../controllers/productController.js";
+import { getProducts, getProductsInStock, createClient, getProductPrice } from "../controllers/productController.js";
 
 const router = express.Router();
 
@@ -10,6 +10,7 @@ router.get("/products", getProductsInStock);
 
 router.post("/clients", createClient);
 
+router.get("/price/:userId/:productName", getProductPrice);
 
 export default router;
 

@@ -11,6 +11,11 @@ const productSchema = new mongoose.Schema({
 		required: true,
 		trim: true,
 	},
+	brand: {
+		type:'string',
+		required: true,
+		trim: true,
+	},
     inStock: {
 		type: 'boolean',
 		required: true,

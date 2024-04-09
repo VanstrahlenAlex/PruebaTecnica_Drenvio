@@ -6,7 +6,7 @@ const clientSchema = new mongoose.Schema({
 		required: true,
 		trim: true,
 	},
-	name: {
+	userName: {
 		type:'string',
 		required: true,
 		trim: true,
@@ -27,5 +27,5 @@ const clientSchema = new mongoose.Schema({
     }
 })
 
-const Client = mongoose.model('Client', clientSchema);
+const Client = mongoose.model('Clients', clientSchema);
 export default Client;
